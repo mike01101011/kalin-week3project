@@ -1,0 +1,102 @@
+@import "variables";
+
+// offers offers offers offers offers offers offers offers offers offers offers offers offers offers offers offers
+
+.offersTiles {
+	position: relative;
+	text-align: left;
+	text-transform: uppercase;
+	p {
+		color: $colorTextLight;
+		font-size: 1rem;
+		padding-bottom: 30px;
+	}
+	li {
+		font-weight: 300;
+		font-size: 1.2rem;
+		padding: 0 5px 0 0;
+		span {
+			font-weight: 400;
+			font-size: 2rem;
+		}
+	}
+}
+
+.offersTilesList {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: center;
+	a {
+		padding: 10px;
+		font-weight: 400;
+		font-size: 1.1rem;
+	}
+}
+.offersTilesList > li {
+	width: 30%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 100%;
+	padding: 0 30px;
+	padding-top: 35px;
+	padding-bottom: 45px;
+	margin: 10px;
+}
+.offersTilesList > li:nth-child(1) {
+	background-image: url(../assets/03offers/greece.jpg);
+}
+.offersTilesList > li:nth-child(2) {
+	background-image: url(../assets/03offers/china.jpg);
+}
+.offersTilesList > li:nth-child(3) {
+	background-image: url(../assets/03offers/canada.jpg);
+}
+.offersTilesList ul {
+	padding-top: 100px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: space-between;
+	li {
+		border-right: 1px solid $colorBackground;
+	}
+	li:nth-last-child(1) {
+		border: none;
+	}
+}
+
+
+// left-right arrows left-right arrows left-right arrows left-right arrows left-right arrows left-right arrows
+
+div.circleLeft, 
+div.circleRight {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background: $colorBackgroundAlternate;
+	border-radius: 50% ;
+	border: 5px solid $colorBackground;
+}
+div.circleLeft {
+	position: absolute;
+	left: 20px;
+	top: 50%;
+}
+div.circleRight {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+}
+i.fa-chevron-left {
+	position: absolute;
+	top: 7px;
+	left: 8px;
+}
+i.fa-chevron-right {
+	position: absolute;
+	bottom: 7px;
+	right: 8px;
+}

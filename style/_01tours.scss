@@ -1,0 +1,68 @@
+@import "variables";
+
+// tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours
+
+ul.toursTilesList {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: center;
+}
+.toursTilesList li{
+	width: 30%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 100%;
+	padding-top: 60px;
+	margin: 10px;
+	padding-bottom: 10px;
+}
+ul.toursTilesList li:nth-child(1) {
+	background-image: url(../assets/01tour/tour-1.jpg);
+}
+.toursTilesList li:nth-child(2) {
+	background-image: url(../assets/01tour/tour-2.jpg);
+}
+.toursTilesList li:nth-child(3) {
+	background-image: url(../assets/01tour/tour-3.jpg);
+}
+.toursTilesList li:nth-child(4) {
+	background-image: url(../assets/01tour/tour-4.jpg);
+}
+.toursTilesList li:nth-child(5) {
+	background-image: url(../assets/01tour/tour-5.jpg);
+}
+.toursTilesList li:nth-child(6) {
+	background-image: url(../assets/01tour/tour-6.jpg);
+}
+.toursTiles p {
+	font-size: 1.1rem;
+	text-transform: uppercase;
+}
+.toursTiles span {
+	color: $colorTextLight;
+}
+.toursTilesListItemBottom {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding-top: 50px;
+	padding-bottom: 10px;
+}
+.toursTilesListItemBottom a {
+	padding: 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	img {
+		padding-right: 5px;
+	}
+}
+.align p {
+	text-align: left;
+}
+.align img {
+	padding-right: 10px;
+}

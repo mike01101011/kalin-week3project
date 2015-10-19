@@ -1,0 +1,267 @@
+@import "variables";
+
+// footer a footer a footer a footer a footer a footer a footer a footer a footer a footer a footer a footer a
+.footATop {
+	padding: 50px 0;
+}
+.footATopMiddle div {
+	text-align: left;
+}
+.footATopMiddleTours {
+	padding-left: 40px;
+}
+.footATopMiddleTours {
+	width: 40%;
+}
+.footATopMiddleCountries {
+	width: 25%;
+}
+.footATopMiddleFollow {
+	width: 28%;
+}
+.footATopMiddleTours, 
+.footATopMiddleCountries, 
+.footATopMiddleFollow {
+	border-right: 1px solid rgba(128,128,128,.3);
+	li {
+		margin-bottom: 10px;
+	}
+	li:nth-last-child(1), {
+		margin-bottom: 0px;
+	}
+}
+h5.footATopHeading {
+	margin-top: 0;
+}
+.footATopMiddleCountries li:nth-child(5) {
+	margin-bottom: 0px;
+}
+.footATopMiddleTours {
+	border-left: 1px solid rgba(128,128,128,.3);
+	border-right: none;
+}
+.footATopMiddleToursList li, 
+.footATopMiddleCountriesList li {
+	color: $colorText;
+}
+
+.footATopMiddleFollow a, 
+.footATopMiddleFollow span {
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+.footATopMiddleFollow a {
+	font-family: $fontSocialButton;
+}
+.footATopMiddleFollow span {
+	color: $colorFootA;
+	background: $colorTextLight;
+}
+.footATopMiddleFollowList li:nth-child(1) {
+	i {
+		padding-right: 8px;
+	}
+	span {
+		position: relative;
+		left: 10px;
+		padding: 5px 11px;
+	}
+}
+.footATopMiddleFollowList li:nth-child(2) {
+	i {
+		padding-right: 5px;
+	}
+	span {
+		position: relative;
+		left: 20px;
+	}
+}
+.footATopMiddleFollowList li:nth-child(3) {
+	i {
+		padding-right: 5px;
+	}
+	span {
+		position: relative;
+		left: 15px;
+		padding: 5px 11px 
+	}
+}
+.footATopMiddleFollowList li:nth-child(4) {
+	i {
+		padding-right: 7px;
+	}
+	span {
+		position: relative;
+		left: 10px;
+	}
+}
+div.footATopLogo {
+	width: 20%;
+	h4 {
+		font-size: 1.4rem;
+	}
+	h5 {
+		font-size: 1.1rem;
+	}
+}
+form.footATopSubscribe {
+	width: 30%;
+	h4 {
+		font-size: 1.4rem;
+	}
+	h5 {
+		font-size: 1.1rem;
+	}
+}
+div.footATopMiddle{
+	width: 50%;
+	h5, ul {
+		font-size: 1.1rem;
+	}
+}
+.footA {
+	background: $colorFootA;
+}
+.footATop {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: space-between;
+}
+.footATopMiddle {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.footATopLogo ul, .headTopLogo ul {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	align-items: center; 
+}
+.footATopLogoList {
+	margin-top: 40px;
+}
+.footATopMiddleToursList, 
+.footATopMiddleCountriesList, 
+.footATopMiddleFollowList {
+	height: 120px;
+}
+ul.footATopMiddleCountriesList {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+ul.footATopMiddleFollowList li {
+	margin: 14px 0;
+}
+// follow buttons
+.facebook {
+	background: $colorFacebook;
+}
+.twitter {
+	background: $colorTwitter;
+}
+.googlePlus {
+	background: $colorGooglePlus;
+}
+.pinterest {
+	background: $colorPinterest;
+}
+
+// footer b footer b footer b footer b footer b footer b footer b footer b footer b footer b footer b
+
+.footB {
+	background: $colorFootB;
+	padding: 5px 0;
+}
+.footBBottomNav {
+	width: 40%;
+	ul {
+		font-size: 1rem;
+	}
+}
+.footBBottomCopyright {
+	width: 60%;
+	text-align: right;
+	p {
+		font-size: 1rem;
+	}
+}
+.footBBottom {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: space-between;
+}
+.footBBottomNav ul {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: space-between;
+}
+.footB span, 
+.footB a {
+	text-transform: uppercase;
+}
+.footBBottom {
+	display: flex;
+ 	align-items: center;
+ 	justify-content: center;
+}
+input {
+	background: none;
+	border: 1px solid grey;
+	border-radius: 5px;
+	font-family: $fontText;
+	font-weight: 300;
+	font-size: 1.2rem;
+	padding: 12px;
+	width: 250px;
+}
+.footATopSubscribeList li:nth-child(2) {
+	position: relative;
+	padding-bottom: 10px;
+	img {
+		position: absolute;
+		bottom: 23px;
+		left: 220px;
+	}
+}
+.footATopMiddleToursList li a, .footATopMiddleCountriesList li a {
+	color: $colorText;
+}
+// http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css
+
+.email::-webkit-input-placeholder {
+   color: $colorText;
+   padding-left: 0px;
+   font-size: 1rem;
+}
+
+.email:-moz-placeholder { /* Firefox 18- */
+   color: $colorText;
+   padding-left: 0px;
+   font-size: 1rem;
+}
+
+.email::-moz-placeholder {  /* Firefox 19+ */
+   color: $colorText;
+   padding-left: 0px;
+   font-size: 1rem;
+}
+
+.email:-ms-input-placeholder {  
+   color: $colorText;
+   padding-left: 0px;
+   font-size: 1rem;
+}
+// http://stackoverflow.com/questions/17042201/how-to-style-input-and-submit-button-with-css
+
+input[type=submit] {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 400;
+}

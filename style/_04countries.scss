@@ -1,0 +1,137 @@
+@import "variables";
+
+// countries countries countries countries countries countries countries countries countries countries countries
+
+.countries a {
+	padding: 20px;
+	text-transform: uppercase;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 170px;
+	img {
+		padding-right: 5px;
+	}
+}
+.countriesr2 a {
+	position: relative;
+	left: 385px;
+}
+.countriesr1, .countriesr2 {
+	text-align: left;
+}
+
+.countriesr2c1 {
+	text-align: right;
+}
+.countriesr2c1 h4, .countriesr1c2 h4 {
+	padding-top: 10px;
+}
+
+.countriesr1c1, 
+.countriesr2c2, 
+.countriesr1c2, 
+.countriesr2c1 {
+	width: 49.9%;
+	padding: 10px;
+}
+.countriesr1, 
+.countriesr2, 
+.countriesr1c1 ul, 
+.countriesr2c2 ul {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+}
+.countriesr1c2r2 ul, 
+.countriesr2c1r2 ul {
+	width: 33%;
+	list-style: disc inside;
+	text-align: left;
+	padding-right: 0;
+	margin-right: 0;
+}
+div.countriesr1c2r2, 
+div.countriesr2c1r2 {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+}
+div.countriesr2c1r2 {
+	justify-content: flex-end;
+}
+.countriesr1c1 li, 
+.countriesr2c2 li, 
+.countriesr1c2, 
+.countriesr2c1 {
+	background-repeat: no-repeat;
+	background-position: center;
+	max-width: 100%;
+}
+.countriesr1c1 li, 
+.countriesr2c2 li {
+	width: 46.3%;
+	background-size: cover;
+	padding-top: 120px;
+	padding-left: 20px;
+	margin: 10px;
+}
+ul.countriesr1c1List li h4, 
+ul.countriesr2c2List li h4{
+	margin: 5px 0;
+}
+.countriesr1c1List h5, 
+.countriesr2c2List h5 {
+	margin: 10px 0;
+	color: $colorTextLight;
+	font-weight: 400;
+	text-transform: uppercase;
+	span {
+		color: $colorTextBright;
+	}
+
+}
+.countriesr1c1 li:nth-child(1) {
+	background-image: url(../assets/04countries/italy/italy-small.jpg);
+}
+.countriesr1c1 li:nth-child(2) {
+	background-image: url(../assets/04countries/italy/italy-small4.jpg);
+}
+.countriesr1c1 li:nth-child(3) {
+	background-image: url(../assets/04countries/italy/italy-small2.jpg);
+}
+.countriesr1c1 li:nth-child(4) {
+	background-image: url(../assets/04countries/italy/italy-small3.jpg);
+}
+div.countriesr1c2 {
+	background-image: url(../assets/04countries/italy/italymap.png);
+}
+div.countriesr2c1 {
+	background-image: url(../assets/04countries/france/francemap.jpg);
+}
+.countriesr2c2 li:nth-child(1) {
+	background-image: url(../assets/04countries/france/francesmall1.jpg);
+}
+.countriesr2c2 li:nth-child(2) {
+	background-image: url(../assets/04countries/france/francesmall2.jpg);
+}
+.countriesr2c2 li:nth-child(3) {
+	background-image: url(../assets/04countries/france/francesmall3.jpg);
+}
+.countriesr2c2 li:nth-child(4) {
+	background-image: url(../assets/04countries/france/francesmall4.jpg);
+}
+
+div.countriesr2c1r2 {
+	position: relative;
+	left: 119px;
+}
+.countriesr1c2r2, .countriesr2c1r2{
+	padding-bottom: 30px;
+	li {
+		color: $colorText;
+		font-weight: 300;
+		font-size: 1.3rem;
+	}
+}

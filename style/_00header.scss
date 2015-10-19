@@ -1,0 +1,209 @@
+@import "variables";
+
+//  headerTop headerTop headerTop headerTop headerTop headerTop headerTop headerTop headerTop headerTop
+
+.head h1 {
+	margin: 30px; 
+}
+.head h1,
+.head p {
+	color: $colorTitle;
+}
+.head {
+	background: url(../assets/00head/hero.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 100%;
+}
+.headTopLogo {
+	width: 20%;
+}
+
+.headTopNav {
+	width: 62%
+}
+.headTop, 
+.headTopNav ul {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+	img {
+		padding: 0 10px;
+	}
+}
+.headTopLogo ul {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.headTopNav ul {
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+.headTop {
+	padding-top: 70px;
+}
+
+// headerMiddle headerMiddle headerMiddle headerMiddle headerMiddle headerMiddle headerMiddle headerMiddle
+
+.headMiddle {
+	width: 59%;
+	margin: 0 auto;
+	padding-top: 170px;
+	p {
+		color: $colorText;
+	}
+}
+.headMiddleButton {
+	width: 33.33%;
+	margin: 0 auto;
+}
+.headMiddle a {
+	margin-top: 60px;
+	padding: 20px 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.headMiddle img {
+	padding-right: 10px;
+}
+
+// headerBottom headerBottom headerBottom headerBottom headerBottom headerBottom headerBottom headerBottom
+ul.headBottomNavList {
+	width: 70%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: center;
+	padding-top: 200px;
+}
+ul.headBottomBottomList {
+	text-align: left;
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding-top: 30px;
+	li {
+		border-bottom: 1px solid rgba(255,255,255, 0.2);
+	}
+	li:nth-last-child(1) {
+		border-bottom: none;
+	}
+	input {
+		background: none;
+		border: none;
+		font-family: $fontText;
+		font-weight: 300;
+		font-size: 1.2rem;
+		padding: 12px;
+		width: 250px;
+	}
+	li:nth-child(1) {
+		position: relative;
+		img {
+			position: absolute;
+			bottom: 12px;
+			left: 10px;
+		}
+	}
+	// li:nth-child(1), 
+	li:nth-child(2), li:nth-child(3) {
+		img {
+			padding-right: 10px;
+		}
+	}
+	li:nth-child(4), li:nth-child(5), li:nth-child(6) {
+		span {
+			padding-right: 10px;
+		}
+	}
+	p {
+		display: flex;
+		flex-wrap: wrap;
+		direction: column;
+		align-items: center;
+	}
+}
+.headBottomBottomList li p {
+	color: $colorText;
+}
+.headBottomNavList li {
+	margin: 0;
+	border: 1px solid rgba(255,255,255, 0.2);
+	// border-bottom: 1px solid rgba(255,255,255, 0);
+	// border-right: 1px solid rgba(255,255,255, 0);
+	transition: all 1s;
+	h5 {
+		margin: 15px 20px;
+	}
+}
+.headBottomNavList li:hover {
+	border: 1px solid rgba(255,255,255, 0.0);
+	background: rgba(0,0,0,0.3);
+}
+.headBottomBottom {
+	background: rgba(0,0,0,0.3);
+	padding: 0 0 80px;
+	p {
+		font-size: 1.2rem;
+	}
+}
+.headBottomNavList h4 {
+	margin: 0;
+	padding: 5px;
+}
+div.weather {
+	display: flex;
+	flex-wrap: wrap;
+	direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.weather h4, .weather img {
+	padding: 0 10px;
+}
+a.searchButton {
+	padding: 20px;
+	display: flex;
+	align-items: center;
+	font-size: 1.3rem;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+a.searchButton img {
+	padding-right: 10px;
+}
+
+// http://stackoverflow.com/questions/2610497/change-an-inputs-html5-placeholder-color-with-css
+
+::-webkit-input-placeholder {
+   color: $colorText;
+   padding-left: 20px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $colorText;
+   padding-left: 20px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $colorText;
+   padding-left: 20px;
+}
+
+:-ms-input-placeholder {  
+   color: $colorText;
+   padding-left: 20px;
+}

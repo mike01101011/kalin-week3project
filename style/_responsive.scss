@@ -1,0 +1,244 @@
+// make a mixin!!!
+// https://css-tricks.com/conditional-media-query-mixins/
+
+/*responsive*/
+
+/* Portrait tablet and small desktops */
+/* Portrait tablet and small desktops */
+/* Portrait tablet and small desktops */
+/* Portrait tablet and small desktops */
+/* Portrait tablet and small desktops */
+
+@media all and (max-width: 940px) {
+	// troubleshooting color
+	// body {
+	// 	background: yellow;
+	// }
+// header header header header header header header header header header header header header header header header
+	.headMiddle {
+		width: 85%
+	}
+	.headTopLogo {
+		width: 100%;
+	}
+	.headTopNav {
+		padding-top: 10px;
+		width: 100%
+	}
+	ul.headBottomNavList {
+	width: 70%;
+	}
+	.headBottomBottomList li:nth-last-child(1) {
+		margin: 0 auto;
+		padding-top: 40px;
+	}
+
+// tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours
+	.toursTilesList li{
+		width: 45%
+	}
+
+// offers offers offers offers offers offers offers offers offers offers offers offers offers offers offers offers offers
+	.offersTilesList li ul li {
+		width: 100%;
+		border-right: none;
+	}
+	div.circleLeft{
+		left: 1px;
+	}
+	div.circleRight {
+		right: 1px;
+	}
+// countries countries countries countries countries countries countries countries countries countries countries countries
+	.countriesr1, 
+	.countriesr2 {
+		flex-direction: column;
+	}
+	.countriesr1c1, 
+	.countriesr2c2, 
+	.countriesr1c2, 
+	.countriesr2c1 {
+		width: 100%;
+	}
+	.countriesr2 {
+		display: flex;
+		flex-wrap: wrap;
+		direction: column;
+		flex-direction: column-reverse;
+	}
+	.countriesr2c1 {
+	text-align: left;
+	}
+	div.countriesr2c1r2 {
+	justify-content: flex-start;
+	}
+	div.countriesr2c1r2 {
+	position: relative;
+	 left: 0px;
+	}
+	.countriesr2 a {
+	position: relative;
+	left: 0px;
+	}
+// footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer
+	.footATop {
+		justify-content: flex-start;
+	}
+	div.footATopLogo {
+		width: 25%;
+	}
+	div.footATopMiddle {
+	    width: 75%;
+	}
+	div.footATopMiddleTours {
+	    width: 33%;
+	}
+	div.footATopMiddleCountries {
+	    padding-left: 10px;
+	}
+	div.footATopMiddleFollow {
+	    border-right: none;
+	    padding-left: 25px;
+	}
+	div.footATopRight {
+		margin: 0 auto;
+		padding-top: 40px;
+	}
+	.footBBottomNav {
+		width: 60%;
+		margin: 0 auto;
+	}
+	.footBBottomCopyright {
+		width: 60%;
+		margin: 0 auto;
+		text-align: center;
+	}
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phone to portrait tablet */
+/* Landscape phone to portrait tablet */
+/* Landscape phone to portrait tablet */
+/* Landscape phone to portrait tablet */
+
+@media all and (max-width: 768px) {
+	// troubleshooting color
+	// body {
+	// 	background: white;
+	// }
+
+// header header header header header header header header header header header header header header header header
+ul.headTopNavList {
+	flex-direction: column;
+}
+ul.headBottomNavList {
+	width: 100%;
+	li a {
+		font-size: 1.4rem
+	}
+}
+// tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours
+	.toursTilesList li{
+		margin: 5px;
+		// padding: 2px;
+	}
+
+// banner banner banner banner banner banner banner banner banner banner banner banner banner banner banner banner
+	.banner {
+		h2 {
+			font-size: 2.2rem;
+		}
+	}
+
+// offers offers offers offers offers offers offers offers offers offers offers offers offers offers offers offers offers
+	.offersTilesList {
+		flex-direction: column;
+		align-items: center;
+		li {
+			width: 100%;
+		}
+	}
+	div.circleLeft{
+		left: -20px;
+	}
+	div.circleRight {
+		right: -20px;
+	}
+// countries countries countries countries countries countries countries countries countries countries countries
+.countriesr1c1 li, 
+.countriesr2c2 li {
+	width: 46.3%;
+	margin: 5px;
+}
+// footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer
+	ul.footATopLogoList {
+		justify-content: center;
+		padding-bottom: 40px;
+	}
+
+	div.footATopLogo {
+		width: 50%;
+		margin: 0 auto;
+	}
+	div.footATopMiddle {
+	    width: 100%;
+	}
+	div.footATopMiddleTours {
+	    width: 50%;
+	}
+	div.footATopMiddleCountries {
+	    width: 50%
+	}
+	div.footATopMiddleFollow {
+	    border-right: 1px solid rgba(128,128,128,.3);
+	    border-left: 1px solid rgba(128,128,128,.3);
+	    width: 50%;
+	    margin-top: 40px;
+	}
+	div.footATopRight {
+		margin: 0 auto;
+		padding-top: 40px;
+	}.footBBottomNav {
+		width: 75%;
+	}
+	.footBBottomCopyright {
+		width: 75%;
+	}
+}
+
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+/* Landscape phones and down */
+
+@media all and (max-width: 480px) {
+// header header header header header header header header header header header header header header header header
+	.headMiddle h1 {
+		font-size: 3.8rem;
+	}
+	ul.headBottomNavList li {
+		width: 100%;
+	a {
+		font-size: 1.4rem;
+		letter-spacing: 0;
+	}
+}
+// tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours tours
+	.toursTilesList li{
+		width: 90%
+	}
+
+// banner banner banner banner banner banner banner banner banner banner banner banner banner banner banner banner
+	.banner {
+		h2 {
+			font-size: 1.6rem;
+		}
+	}
+// footer footer footer footer footer footer footer footer footer footer footer footer footer footer footer
+	.footBBottomNav {
+		width: 90%;
+	}
+	.footBBottomCopyright {
+		width: 90%;
+	}
+}

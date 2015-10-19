@@ -1,0 +1,145 @@
+
+// import scss import scss import scss import scss import scss import scss import scss import scss import scss
+
+@import "setup";
+
+@import "variables";
+
+@import "00header";
+@import "01tours";
+@import "02banner";
+@import "03offers";
+@import "04countries";
+@import "05footer";
+
+@import "responsive";
+
+// mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins mixins
+
+@mixin fontSize($value) {
+	// older browser support
+	font-size: $value *1px;
+	// newer browsers
+	font-size: ($value / 10) *1rem;
+}
+
+// wrappers wrappers wrappers wrappers wrappers wrappers wrappers wrappers wrappers wrappers wrappers wrappers
+
+.wrapper {
+	max-width: 1280px;
+	text-align: center;
+}
+.constrain {
+	width: 90%;
+	margin: 0 auto;
+}
+
+// general styling general styling general styling general styling general styling general styling general styling
+
+html {
+	// default broser size is about 16, this converts it to about 10
+	font-size: 62.5%;
+}
+body {
+	@include fontSize(15);
+	font-family: $fontText;
+	letter-spacing: 0.5px;
+}
+p {
+	color: $colorText;
+	font-weight: 300;
+
+}
+a {
+	color: $colorTitle;
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+// header styling header styling header styling header styling header styling header styling header styling
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: $colorTitle;
+	font-family: $fontTitle;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+h1 {
+	@include fontSize(58);
+	letter-spacing: 10px;	
+}
+h2 {
+	@include fontSize(32);
+	letter-spacing: 7px;	
+}
+h3 {
+	@include fontSize(22);
+	letter-spacing: 4px;	
+}
+h4 {
+	@include fontSize(18);
+	letter-spacing: 3px;
+}
+h6 {
+	@include fontSize(14);
+	letter-spacing: 0px;
+	font-weight: 300;	
+}
+.darkHeader > h2,
+.darkHeader > h3,
+.darkHeader > h4 {
+	color: $colorTitleDark;
+}
+// li styling li styling li styling li styling li styling li styling li styling li styling li styling li styling
+
+li {
+	color: $colorTitle;
+}
+
+// to be organized to be organized to be organized to be organized to be organized to be organized to be organized
+
+i.fa {
+	color: white;
+}
+p.whiteText span {
+	color: $colorTextLight; 
+}
+
+// button styling
+
+.button {
+	color: $colorTextLight;
+	background-color: $colorButton;
+	border-radius: 5px;
+	border: 1px solid rgba(74,229,209,0);
+	transition: all 1s;
+}
+.button:hover {
+	background-color: rgba(74,229,209,.3);
+	border: 1px solid $colorButton;
+}
+.button {
+	font-size: 1.2rem;
+}
+
+.leftJustifyText {
+	text-align: left;
+}
+section {
+	margin: 80px 0;
+}
+.footA, .footB {
+	margin: 0;
+}
+
+div.toursTiles, div.offersTiles, div.countries {
+	margin-top: 80px;
+}

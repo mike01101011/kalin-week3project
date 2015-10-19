@@ -1,0 +1,19 @@
+@import "variables";
+
+// banner banner banner banner banner banner banner banner banner banner banner banner banner banner banner
+
+div.galleryCell {
+	width: 100vw;
+}
+.banner {
+	background-image: url(../assets/02banner/banner.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-width: 100%;
+	padding-bottom: 100px;
+}
+
+div.galleryCell {
+	padding-top: 100px;
+}
